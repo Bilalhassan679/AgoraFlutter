@@ -30,7 +30,7 @@ class _HomePageState extends State<HomePage> {
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadiusDirectional.circular(10))),
           )),
-          Divider(height: 60,thickness: 2,indent: 30,endIndent: 30,),
+          Divider(height: 60,thickness: 2,indent: 30,endIndent: 30),
           OutlinedButton.icon(onPressed: () {Get.to(const JoinWithCodeScreen());}, icon: Icon(Icons.margin), label: Text('Join with Code '),
           style: OutlinedButton.styleFrom(primary: Colors.indigo,side: BorderSide(color: Colors.indigo) ,fixedSize: Size(350, 60),shape: RoundedRectangleBorder(borderRadius: BorderRadiusDirectional.circular(10))),
           ),

@@ -1,3 +1,4 @@
+import 'package:agoraflutter/agorasettings/video_calls.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -54,7 +55,7 @@ class _JoinWithCodeScreenState extends State<JoinWithCodeScreen> {
                         textAlign: TextAlign.center))),
             Center(
                 child: ElevatedButton(
-              onPressed: () {},
+              onPressed: () {Get.to(VideoCalls());},
               child: Text('Join'),
               style: ElevatedButton.styleFrom(primary: Colors.indigo),
             ))
