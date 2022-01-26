@@ -55,6 +55,7 @@ class _NewMeetingPageState extends State<NewMeetingPage> {
               ),
             ),
           ),
+          const Divider(thickness: 1,indent: 30,endIndent: 40,height: 10,),
           Center(
               child: ElevatedButton.icon(
             onPressed: () {},
