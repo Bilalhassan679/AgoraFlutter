@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -34,21 +33,21 @@ class _NewMeetingPageState extends State<NewMeetingPage> {
             fit: BoxFit.cover,
             height: 110,
           )),
-          SizedBox(height: 10),
-          Center(
+          const SizedBox(height: 10),
+          const Center(
               child: Text(
             'Your Meeting is ready',
             style: TextStyle(fontWeight: FontWeight.bold),
           )),
-          SizedBox(height: 10),
-          Center(
+          const SizedBox(height: 10),
+           Center(
             child: Padding(
               padding: const EdgeInsets.all(8.0),
               child: Card(
                 elevation: 1,
                 color:Colors.grey[400],
                 shape:RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)) ,
-                child: ListTile(
+                child: const ListTile(
                   leading: Icon(Icons.link),
                   title: SelectableText('asd-skt-gss'),
                   trailing: Icon(Icons.copy),
@@ -59,8 +58,8 @@ class _NewMeetingPageState extends State<NewMeetingPage> {
           Center(
               child: ElevatedButton.icon(
             onPressed: () {},
-            icon: Icon(Icons.keyboard_arrow_down, color: Colors.white),
-            label: Text(
+            icon:  const Icon(Icons.keyboard_arrow_down, color: Colors.white),
+            label: const Text(
               "Share invite",
               style: TextStyle(color: Colors.white),
             ),
@@ -72,17 +71,17 @@ class _NewMeetingPageState extends State<NewMeetingPage> {
           Center(
               child: ElevatedButton.icon(
             onPressed: () {},
-            icon: Icon(
+            icon: const Icon(
               Icons.video_call,
               color: Colors.indigo,
             ),
-            label: Text(
+            label: const Text(
               "Start Call",
               style: TextStyle(color: Colors.indigo),
             ),
             style: ElevatedButton.styleFrom(
                 primary: Colors.white,
-                side: BorderSide(color: Colors.indigo),
+                side: const BorderSide(color: Colors.indigo),
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(25))),
           ))
